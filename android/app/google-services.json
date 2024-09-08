@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1040573397716",
+    "project_id": "restaurante-popular",
+    "storage_bucket": "restaurante-popular.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040573397716:android:463fc943f3bf5840a91941",
+        "android_client_info": {
+          "package_name": "br.com.ifb.trabalhofinal.restaurante_comunitario"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzbD_ZM27X7Ufo5C0H9KkPSzT4K4YUE-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040573397716:android:208ae71ed1c67994a91941",
+        "android_client_info": {
+          "package_name": "br.com.ifb.trabalhofinal.restaurante_popular"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzbD_ZM27X7Ufo5C0H9KkPSzT4K4YUE-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
