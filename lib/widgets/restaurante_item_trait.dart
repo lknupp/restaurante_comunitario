@@ -23,10 +23,15 @@ class RestauranteItemTrait extends StatelessWidget {
         const SizedBox(
           width: 6,
         ),
-        Text(label,
+        Flexible(
+          child: Text(
+            label,
             style: const TextStyle(
               color: Colors.white,
-            )),
+            ),
+            softWrap: true,
+          ),
+        ),
       ],
     );
   }
