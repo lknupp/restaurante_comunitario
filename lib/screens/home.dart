@@ -9,26 +9,26 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return StreamBuilder(
       stream: FirebaseFirestore.instance.collection('informações').snapshots(),
-      builder: (ctx, chatSnapshots) {
-        if (chatSnapshots.connectionState == ConnectionState.waiting) {
+      builder: (ctx, textSnapshots) {
+        if (textSnapshots.connectionState == ConnectionState.waiting) {
           return const Center(
             child: CircularProgressIndicator(),
           );
         }
 
-        if (!chatSnapshots.hasData || chatSnapshots.data!.docs.isEmpty) {
+        if (!textSnapshots.hasData || textSnapshots.data!.docs.isEmpty) {
           return const Center(
             child: Text('No messages found!'),
           );
         }
 
-        if (chatSnapshots.hasError) {
+        if (textSnapshots.hasError) {
           return const Center(
             child: Text('An error occurred!'),
           );
         }
 
-        final infoText = chatSnapshots.data!.docs;
+        final infoText = textSnapshots.data!.docs;
 
         infoText.sort((a, b) {
           final aData = a.data();
