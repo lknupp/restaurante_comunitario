@@ -27,11 +27,11 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
       currentIndex: _selectedPageIndex,
       items: const [
         BottomNavigationBarItem(
-          icon: Icon(Icons.set_meal),
+          icon: Icon(Icons.info),
           label: 'Info',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.star),
+          icon: Icon(Icons.restaurant),
           label: 'Restaurantes',
         ),
       ],
